@@ -1,0 +1,97 @@
+/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    color: #537fbe;
+}
+nav .navbar-brand .red
+{
+    color: #ea433b;
+}
+nav .navbar-brand .yellow
+{
+    color: #f5b82e;
+}
+nav .navbar-brand .green
+{
+    color: #2e944b;
+}
+
+/* Quote display */
+.section {
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.5rem;
+}
+
+table {
+    background-color: transparent;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+table th,
+table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+/* Last parameter is the transparency */
+tbody tr:nth-of-type(odd) {
+    background-color: rgb(179, 208, 255, 0.3)
+}
+
+/* Square button */
+.butt {
+    border: 1px outset black;
+    border-radius: 4px;
+    background-color: white;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+ }
+
+ .butt:hover {
+    background-color: white;
+    color:white;
+ }
+
+ .buttl {
+    border: 1px outset black;
+    border-radius: 4px;
+    margin-left:10px;
+    background-color: white;
+    height:30px;
+    width:30px;
+    cursor:pointer;
+ }
+
+ .buttl:hover {
+    background-color: white;
+    color:white;
+ }
+
+ .pick {
+    border: 1px outset black;
+    border-radius: 4px;
+    height:40px;
+    width:40px;
+    cursor:pointer;
+ }
+
+ .pick:active {
+    border: 2px outset black;
+ }
+
+ /*A Sqaure?*/
+ .square {
+    height: 50px;
+    width: 50px;
+    background-color: #555;
+  }

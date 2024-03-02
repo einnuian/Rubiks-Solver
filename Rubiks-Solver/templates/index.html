@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Cube
+{% endblock %}
+
+{% block main %}
+    <h3 class="mb-3">What does your Rubik's Cube look like?</h3>
+    <h5 class="mb-3">Select the colors and fill in the cube!</h5>
+    <div class="mb-3">
+        <button class="pick" id="blue" type="button" style="background-color: blue;" onclick="takeColor('blue')"></button>
+        <button class="pick" id="white" type="button" style="background-color: white;" onclick="takeColor('white')"></button>
+        <button class="pick" id="red" type="button" style="background-color: red;" onclick="takeColor('red')"></button>
+        <button class="pick" id="green" type="button" style="background-color: green;" onclick="takeColor('green')"></button>
+        <button class="pick" id="yellow" type="button" style="background-color: yellow;" onclick="takeColor('yellow')"></button>
+        <button class="pick" id="orange" type="button" style="background-color: orange;" onclick="takeColor('orange')"></button>
+    </div>
+    <div>
+        <div class="me-3">
+            <div class="me-5">
+                <div class="me-5">
+                    <div class="mb-1">
+                        <input class="butt" id="0" type="button" value="U" onclick="setColor('0')" />
+                        <input class="butt" id="1" type="button" value="U" onclick="setColor('1')" />
+                        <input class="butt" id="2" type="button" value="U" onclick="setColor('2')" />
+                    </div>
+                    <div class="mb-1">
+                        <input class="butt" id="3" type="button" value="U" onclick="setColor('3')" />
+                        <input class="butt" id="4" type="button" value="U" onclick="setColor('4')" />
+                        <input class="butt" id="5" type="button" value="U" onclick="setColor('5')" />
+                    </div>
+                    <div class="mb-3">
+                        <input class="butt" id="6" type="button" value="U" onclick="setColor('6')" />
+                        <input class="butt" id="7" type="button" value="U" onclick="setColor('7')" />
+                        <input class="butt" id="8" type="button" value="U" onclick="setColor('8')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="mb-1">
+            <input class="butt" id="9" type="button" value="L" onclick="setColor('9')" />
+            <input class="butt" id="10" type="button" value="L" onclick="setColor('10')" />
+            <input class="butt" id="11" type="button" value="L" onclick="setColor('11')" />
+            <input class="buttl" id="12" type="button" value="F" onclick="setColor('12')" />
+            <input class="butt" id="13" type="button" value="F" onclick="setColor('13')" />
+            <input class="butt" id="14" type="button" value="F" onclick="setColor('14')" />
+            <input class="buttl" id="15" type="button" value="R" onclick="setColor('15')" />
+            <input class="butt" id="16" type="button" value="R" onclick="setColor('16')" />
+            <input class="butt" id="17" type="button" value="R" onclick="setColor('17')" />
+            <input class="buttl" id="18" type="button" value="B" onclick="setColor('18')" />
+            <input class="butt" id="19" type="button" value="B" onclick="setColor('19')" />
+            <input class="butt" id="20" type="button" value="B" onclick="setColor('20')" />
+        </div>
+        <div class="mb-1">
+            <input class="butt" id="21" type="button" value="L" onclick="setColor('21')" />
+            <input class="butt" id="22" type="button" value="L" onclick="setColor('22')" />
+            <input class="butt" id="23" type="button" value="L" onclick="setColor('23')" />
+            <input class="buttl" id="24" type="button" value="F" onclick="setColor('24')" />
+            <input class="butt" id="25" type="button" value="F" onclick="setColor('25')" />
+            <input class="butt" id="26" type="button" value="F" onclick="setColor('26')" />
+            <input class="buttl" id="27" type="button" value="R" onclick="setColor('27')" />
+            <input class="butt" id="28" type="button" value="R" onclick="setColor('28')" />
+            <input class="butt" id="29" type="button" value="R" onclick="setColor('29')" />
+            <input class="buttl" id="30" type="button" value="B" onclick="setColor('30')" />
+            <input class="butt" id="31" type="button" value="B" onclick="setColor('31')" />
+            <input class="butt" id="32" type="button" value="B" onclick="setColor('32')" />
+        </div>
+        <div class="mb-3">
+            <input class="butt" id="33" type="button" value="L" onclick="setColor('33')" />
+            <input class="butt" id="34" type="button" value="L" onclick="setColor('34')" />
+            <input class="butt" id="35" type="button" value="L" onclick="setColor('35')" />
+            <input class="buttl" id="36" type="button" value="F" onclick="setColor('36')" />
+            <input class="butt" id="37" type="button" value="F" onclick="setColor('37')" />
+            <input class="butt" id="38" type="button" value="F" onclick="setColor('38')" />
+            <input class="buttl" id="39" type="button" value="R" onclick="setColor('39')" />
+            <input class="butt" id="40" type="button" value="R" onclick="setColor('40')" />
+            <input class="butt" id="41" type="button" value="R" onclick="setColor('41')" />
+            <input class="buttl" id="42" type="button" value="B" onclick="setColor('42')" />
+            <input class="butt" id="43" type="button" value="B" onclick="setColor('43')" />
+            <input class="butt" id="44" type="button" value="B" onclick="setColor('44')" />
+        </div>
+    </div>
+    <div>
+        <div class="me-3">
+            <div class="me-5">
+                <div class="me-5">
+                    <div class="mb-1">
+                        <input class="butt" id="45" type="button" value="D" onclick="setColor('45')" />
+                        <input class="butt" id="46" type="button" value="D" onclick="setColor('46')" />
+                        <input class="butt" id="47" type="button" value="D" onclick="setColor('47')" />
+                    </div>
+                    <div class="mb-1">
+                        <input class="butt" id="48" type="button" value="D" onclick="setColor('48')" />
+                        <input class="butt" id="49" type="button" value="D" onclick="setColor('49')" />
+                        <input class="butt" id="50" type="button" value="D" onclick="setColor('50')" />
+                    </div>
+                    <div class="mb-3">
+                        <input class="butt" id="51" type="button" value="D" onclick="setColor('51')" />
+                        <input class="butt" id="52" type="button" value="D" onclick="setColor('52')" />
+                        <input class="butt" id="53" type="button" value="D" onclick="setColor('53')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary mb-3" id="cube" onclick=sendVar()>Submit Cube</button>
+    <form action="/" method="post">
+        <button class="btn btn-primary" type="submit">Solve!</button>
+    </form>
+{% endblock %}

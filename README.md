@@ -35,5 +35,3 @@ Once you have a Rubik's Cube in your hand, hold it in a fixed position, where th
 2. **app.py** contains the flask route **/process** which retrieves  and stores the string. When the Solve! button is clicked, **/** recieves a POST request and generates the solution.
 
 3. The "Rubik's Cube Notation" tab takes you to Ruwix's page about Rubik's Cube notation.
-
-This was my Final Project.

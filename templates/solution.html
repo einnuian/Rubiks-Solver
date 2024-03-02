@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Solution
+{% endblock %}
+
+{% block main %}
+<div class="section">
+
+    <h2>Solution</h2>
+    <div>{{ cube_string }}</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Step</th>
+                <th>Moves</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Loop through the database entries to display them in this table -->
+            {% for step, moves in sol.items() %}
+            <tr>
+                <td>{{step}}</td>
+                <td>{{moves}}</td>
+            </tr>
+            {% endfor %}
+            <div>The total move count is {{ count }}</div>
+        </tbody>
+    </table>
+</div>
+{% endblock %}

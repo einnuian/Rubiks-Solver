@@ -15,7 +15,7 @@ The acronym CFOP stands for Cross - First 2 Layers - Orientation of the Last Lay
 
 The python logic behind the implementation of the Rubik's cube was adapted from the python package [rubik-cube by Paul Glass](https://pypi.org/project/rubik-cube/).
 
-1. **cube.py** together with **maths.py** defines the Classes Pieces and Cube, as well as various functions that allow manipulation of the cube, such as applying turns. Additional moves such as double moves and double-layer moves were added. A scrambler that scrambles the cube following a sequence of moves was also added.
+1. **cube.py** together with **maths.py** defines the Classes Pieces and Cube, as well as various methods that allow manipulation of the cube, such as applying turns. Additional moves such as double moves and double-layer moves were added. A scrambler that scrambles the cube following a sequence of moves was also added.
 
 2. **cfop.py** is a modified version of Glass's **solve.py**, which contains all the functions used to solve the Rubik's cube. All 57 OLL and 21 PLL algorithms belonging to CFOP were implemented here. The cube is fixed on the y-axis (can only rotate around the y-axis) through out the entire solve following the standard CFOP solving practice. Other modifications include checking for cases where the 2nd layer is already solved and organizing the solution moves into their respective solving stages (Cross, F2L, OLL, PLL, etc.).
 
@@ -36,4 +36,3 @@ Once you have a Rubik's Cube in your hand, hold it in a fixed position, where th
 
 3. The "Rubik's Cube Notation" tab takes you to Ruwix's page about Rubik's Cube notation.
 
-This was my Final Project.
